@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+</head>
+<style type="text/css">
+	
+	input{
+		margin: 10px;
+	}
+</style>
+<body>
+	<h1 align="center">Data Mahasiswa</h1>
+	<form method="post">
+		<fieldset id="personal_information">
+			<legend>Informasi Pribadi</legend>
+			<div class="ip">
+				<div>
+					<label>Nama</label><br/>	
+					<input type="text" name="nama" id="name"/><br/>
+				</div>
+				<div>
+					<label>Tempat Tanggal Lahir</label><br/>	
+					<input type="datetime" name="tgl_lahir" id="ttl" /><br/>	
+				</div>
+			</div>
+		</fieldset> <br>	
+		<fieldset id="Informasi Kontak">
+			<legend>Informasi Kontak</legend>
+			<div>
+				<div>
+					<label>Alamat</label>
+					<textarea>
+					</textarea><br>
+
+					<label>Kota</label>
+					<input type="text" name="kota" id="kota"/><br/>
+
+					<label>Kode Pos</label>
+					<input type="text" name="kode_pos" id="kode_pos"/><br/>
+
+					<label>Telepon</label>
+					<input type="number" name="tlp" id="tlp"/><br/>
+
+					<label>Provinsi</label>
+					<input type="text" name="provinsi" id="provinsi"/><br/>
+
+					<label>email</label>
+					<input type="text" name="email" id="email"/><br/>
+
+					<label>Tipe membership</label>
+					<div>
+						<input type="radio" name="rg" id="rg" value="rg" checked /> Regular
+						<input type="radio" name="pr" id="pr" value="pr" /> Premium
+						<input type="radio" name="VIP" id="vip" value="VIP" /> VIP
+					</div>
+				</div>
+			</div>
+		</fieldset><br>
+
+		<fieldset id="Informasi Kursus">
+			<legend>Informasi Kursus</legend>
+			<div>
+				<div>
+					<label>Nama Kursus</label>
+					<input type="text" name="nk" id="nk"/><br/>
+
+					<label>Detail Pembayaran</label>
+					<div>
+						<input type="radio" name="cs" id="cs" value="cs" checked /> Cash
+						<input type="radio" name="ccl" id="ccl" value="ccl" /> Cicilan
+						<input type="radio" name="kk" id="kk" value="kk" /> Kartu Kredit
+					</div>
+
+					<label>Komentar</label><br>
+					<textarea>
+					</textarea>
+
+				</div>
+			</div>
+		</fieldset>
+		 <button type="submit" name="btn" class="btn btn-info">Simpan</button>
+	</form>
+</body>
+</html>
